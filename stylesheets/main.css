@@ -1,0 +1,35 @@
+h1{
+    background: rgb(255,10,240); 
+}
+img#pawn{
+    display:none;
+    width: 90px;
+    height: 90px;
+}
+
+#chessBoard{
+    display: inline-block;
+    border: 1px inset lightGray;
+}
+
+#chessBoard div{
+    line-height: 1px;
+}
+
+#chessBoard span{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border: 1px outset lightGray;
+}
+
+#chessBoard div:nth-child(odd) span:nth-child(even),
+#chessBoard div:nth-child(even) span:nth-child(odd){
+    background-color: rgba(240, 193, 66, 0.4);
+}
+#chessBoard div:nth-child(even) span:nth-child(even),
+#chessBoard div:nth-child(odd) span:nth-child(odd){
+    background-color: rgba(255, 238, 161, 0.4);
+}
+.pawn[color="white"]{
+}
